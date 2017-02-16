@@ -59,10 +59,10 @@ public class acad {
 	}
                 }
 
-
+In this program two integers were added up and its value is stored in 'd'.those integers were printed as "First Number" and second number
+in 'second number'.and the sum of their outputs as 'sum is'.
 -------------------------------------------------------------------------------------------------------------------------------------
-d)Write a program to accept two numbers from “stdin” and find all the odd
-as well as even numbers present in between them.
+d)Write a program to accept two numbers from “stdin” and find all the odd as well as even numbers present in between them.
 
 
 import java.util.Scanner;
@@ -93,7 +93,10 @@ public static void main(String args[])
 	}
 }
 
+Gets the two input from the user and checks the inbetween number values whethere it is even or odd. when a number divided by 2 and when
+its denominator becomes 0.then it is a even number else it is a odd number. at last it prints the value which are even and odd seperately.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 e)Joe is scared to go to school. When her dad asked for the reason, Joe said that she was unable to complete the task given to her by 
 her teacher. The task was to find the “first 10 multiples” of the number entered from “stdin”. 
 
@@ -114,10 +117,9 @@ public static void main(String args[])
 
                 }
 
-
-
-
-
+Here the input is given by the user and in the if statement it is entioned that the loop will run upto 10 counts so it will multiply the
+input from one to ten atlast will print the output.
+----------------------------------------------------------------------------------------------------------------------------------------
 f)Write a program consisting the method “sum()” and demonstrate the concept of method overloading using this method.
 
 
@@ -145,8 +147,9 @@ public class acad {
 		}
 	}
   
-  
-  
+ 	here we get two integers and two strings seperately from the user.and the string as well the integer will be added up and those
+values will be printed at last.
+---------------------------------------------------------------------------------------------------------------------------------------  
   g)Can you overload a method with the same return type? Explain your answer with proper logic.
   
   It is possible to overload under a case that it shoul have a same return type and different argument list.when the arguments are 
@@ -171,26 +174,22 @@ public class acad {
     	int c =(int)ch;
       return c;
     }
-	
-	public static void main(String args[])
-	{
+		public static void main(String args[])
+		{
 		Scanner s= new Scanner(System.in);
-		
 		int a = s.nextInt();
 		int a2 = s.nextInt();
 		System.out.println("Strong");
 		System.out.println(sum(a,a2));//sum with integer type as input
 		System.out.println(sum('a'));//	sum with char type as input
 		}
-	}
+		}
   
  In the program above it gives sum and asci value of the particular character.and it is that the method used is sum and it have the 
   same return type but diffeent argument list.
   
-  
-  
-  h)Write a program in Java using Arrays, that sorts the element in a descending order.
-
+---------------------------------------------------------------------------------------------------------------------------------
+h)Write a program in Java using Arrays, that sorts the element in a descending order.
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -200,8 +199,8 @@ public class acad {
 	{
 		Scanner s= new Scanner(System.in);
 				Integer[] intArray = new Integer[5];
-	for (int j= 0;j< 5;j++)
-  {
+	for (int j=0;j<5;j++)
+        {
 		intArray[j]=s.nextInt();
 	}
   
@@ -210,6 +209,9 @@ public class acad {
 	for (int j=0;j<intArray.length;j++) 
 			{
 		System.out.println(intArray[j]);
-	    }
-	}
-	            	}
+	                }
+       	}
+	         }
+		 
+Here we get the inpput from the user and by using reverseorder we print the output in the reverse format.just for a change we print 
+a statement 'Strong' in between.
