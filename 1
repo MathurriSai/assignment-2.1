@@ -1,0 +1,215 @@
+a)Write a Java code with the class name, “acad,” and a method called “main.” Hard code the program with two integers and print the sum 
+of those two integers.
+
+import java.util.Scanner;
+
+public class acad {
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int a1 = 5;
+		int a2  = 7;
+		a= a1+a2;
+		System.out.println(a);
+		}
+}
+
+
+b)Rewrite the above code, wherein the inputs are provided by the user at runtime and the output is printed.
+
+import java.util.Scanner;
+public class acad {
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		int a1 = s.nextInt();
+		int a2  = s.nextInt();
+		a= a1+a2;
+		System.out.println(a);
+	}
+}
+
+
+
+c)Write a program with the method name, “sum()” that accepts two parameters from the user and print the sum of those two numbers.
+The output format should be:
+First number is:
+Second number is:
+Sum is:
+
+
+import java.util.Scanner;
+
+public class acad {
+	public static int sum(int a1,int a2)
+	{
+		int d = a1+a2;
+		return d;
+	}
+  
+  
+	public static void main(String args[])
+	{
+		Scanner sd =new Scanner(System.in);
+	int a1 = sd.nextInt();
+	int a2 =sd.nextInt();
+		System.out.println( "First number is:"+a1);
+		System.out.println("Second number is:"+a2);
+		System.out.println("Sum is:"+sum(a1,a2));
+	}
+                }
+
+
+
+d)Write a program to accept two numbers from “stdin” and find all the odd
+as well as even numbers present in between them.
+
+
+import java.util.Scanner;
+public class acad {
+public static void main(String args[])
+{
+	StringBuffer s = new StringBuffer();
+		StringBuffer s1 = new StringBuffer();
+		Scanner sc =new Scanner(System.in);
+		int a = sc.nextInt();
+		int a2 =sc.nextInt();
+		for (int i = a; i <=b; i++) {
+			if(i%2==0)
+			{
+				s.append(i);
+				s.append(" ");
+			}
+			else
+			{
+				s1.append(i);
+				s1.append(" ");
+			}
+		}
+		System.out.println("The even number are");
+		System.out.println(s.toString());
+		System.out.println("The odd number are");
+		System.out.println(s1.toString());
+	}
+}
+
+
+e)Joe is scared to go to school. When her dad asked for the reason, Joe said that she was unable to complete the task given to her by 
+her teacher. The task was to find the “first 10 multiples” of the number entered from “stdin”. 
+
+
+import java.util.Scanner;
+public class acad {
+public static void main(String args[])
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Input");
+		int a = s.nextInt();
+		System.out.println("Output");
+		for (int i = 1; i <=10; i++) 
+    {
+			System.out.println(a+"x"+i+"="+i*a);
+		}
+	}
+
+                }
+
+
+
+
+
+f)Write a program consisting the method “sum()” and demonstrate the concept of method overloading using this method.
+
+
+import java.util.Scanner;
+public class acad {
+	public static void sum(int a1, int a2)
+    {
+         System.out.println(a1+a2);
+    }
+    public static void  sum(String s ,String s1)  
+    {
+    	String st = s+s1;
+         System.out.println(st);
+    }
+	
+	public static void main(String args[])
+	{
+		Scanner s= new Scanner(System.in);
+		int a1 = s.nextInt();
+		int a2 = s.nextInt();
+		String s = s.next();
+		String ss = s.next();
+		sum(a1,a2);//sum with integer type as input
+		sum(s,ss);//	sum with String type as input
+		}
+	}
+  
+  
+  
+  g)Can you overload a method with the same return type? Explain your answer with proper logic.
+  
+  It is possible to overload under a case that it shoul have a same return type and different argument list.when the arguments are 
+  same then the argument sequence must be changed then.And if there exist two or more methods which holds the same name and different
+  arguments with same class teh it is called as Method Overloading.and the benefit of overloading is that it permits one to implement 
+  methods which supports same sematic operation but by differing the nymber or type of a argument. 
+  
+ Points to Remember in overloading:
+* Argument list must be changed
+* There mus be a change in access modifier
+* As well change in return type
+* In same class or sub class over laod is possible
+
+import java.util.Scanner;
+public class acad {
+	public static int sum(int a1 , int a2)
+    {
+		return a1+a2; 
+    }
+    public static int  sum(char ch)  
+    {
+    	int c =(int)ch;
+      return c;
+    }
+	
+	public static void main(String args[])
+	{
+		Scanner s= new Scanner(System.in);
+		
+		int a = s.nextInt();
+		int a2 = s.nextInt();
+		System.out.println("Strong");
+		System.out.println(sum(a,a2));//sum with integer type as input
+		System.out.println(sum('a'));//	sum with char type as input
+		}
+	}
+  
+ In the program above it gives sum and asci value of the particular character.and it is that the method used is sum and it have the 
+  same return type but diffeent argument list.
+  
+  
+  
+  h)Write a program in Java using Arrays, that sorts the element in a descending order.
+
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+public class acad {
+		public static void main(String args[])
+	{
+		Scanner s= new Scanner(System.in);
+				Integer[] intArray = new Integer[5];
+	for (int j= 0;j< 5;j++)
+  {
+		intArray[j]=s.nextInt();
+	}
+  
+	Arrays.sort(intArray, Collections.reverseOrder());
+	System.out.println("stream");
+	for (int j=0;j<intArray.length;j++) 
+			{
+		System.out.println(intArray[j]);
+	    }
+	}
+	            	}
